@@ -1,0 +1,163 @@
+
+/*メイン*/
+main{
+  max-width: 85%;
+  margin: 0 auto;
+  height: 310vh;/*メインの量に合わせて変える*/
+  padding-top: 20vh;
+  /*background-color: antiquewhite;*/ /*mainの高さ検証の為*/
+}
+
+
+
+.flex{
+  display: flex;
+  width: 100%;
+  margin-top: 13vh;
+}
+
+.flex .mini-img{
+  width: 50%;
+}
+
+.flex .mini-img img{
+  width: 100%;
+  height: 93%;
+  object-fit: cover;
+}
+
+.flex-txt{
+  width: 50%;
+}
+
+.flex-txt1, .flex-txt3{
+  padding-top: 1vh ;
+  padding-left: 5vw ;
+}
+
+.flex-txt2{
+  padding-top: 1vh ;
+  padding-right: 5vw ;
+}
+
+
+
+/*コンテンツごとのタイトル*/
+.flex-txt h3{
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: .2vw;
+  margin-bottom: .2vh;
+}
+
+/*コンテンツ内のそれぞれテキスト*/
+.flex-txt .long-txt{
+  margin-top: 2vh;
+  letter-spacing: .02vw;
+  line-height: 4vh;
+}
+
+/*dlリスト*/
+dl {
+  margin-top: 3vh;
+  display: flex;
+  flex-wrap: wrap;
+  border: .7px solid #ffece0;
+  width: 90%;
+}
+
+dl dt {
+  width: 30%;
+  text-align: center;
+  background-color: #ffdcdc6e;
+  border-bottom: .7px dotted #e7bdbd6e;
+  padding: .8vh .8vw;
+}
+
+dl dt:nth-of-type(5){
+  border-bottom: none;
+}
+
+dl dd {
+  width: 70%;
+  text-align: right;
+  padding: .8vh .8vw;
+  border-bottom: .7px dotted #eed5c4;
+  padding-right: 3vw;
+}
+
+dl dd:nth-of-type(5){
+  border-bottom: none;
+}
+
+
+@media screen and (max-width:1024px) {
+
+ /*メイン*/
+  main{
+    max-width: 98vw;
+    height: auto;
+  }
+
+  .flex{
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+
+  }
+
+  .flex .mini-img{
+    width: 100vw;
+  }
+
+  .flex .mini-img img{
+    width: 100vw;
+    height: 35vh;
+    object-fit: cover;
+  }
+
+  .flex-txt{
+    width: 100%;
+    margin: 5vh auto ;
+  }
+
+  .flex-txt1, .flex-txt3{
+    padding-top: 0vh ;
+    padding-left: 0vw ;
+  }
+
+  .flex-txt2{
+    padding-top: 0vh ;
+    padding-right: 0vw ;
+  }
+
+  .simple{
+    flex-direction: column-reverse;
+  }
+
+  /*コンテンツごとのタイトル*/
+  .flex-txt h3{
+    font-size: 1.6rem;
+  }
+  
+  .flex-txt p{
+    font-size: .9em;
+  }
+
+  /*コンテンツ内のそれぞれテキスト*/
+  .flex-txt .long-txt{
+    width: 88vw;
+    margin: 4vh auto;
+
+  }
+
+  /*dlリスト*/
+  dl {
+    margin: 0 auto;
+  }
+
+}
+
+
+
+

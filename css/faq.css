@@ -1,0 +1,244 @@
+
+/*メイン*/
+main{
+  max-width: 85%;
+  margin: 0 auto;
+  height: 220vh;/*メインの量に合わせて変える*/
+  padding-top: 20vh;
+  /*background-color: antiquewhite;*/ /*mainの高さ検証の為*/
+}
+
+.qa-list{
+  width: 80%;
+  margin: 10vh auto;
+}
+
+/*dlリスト全体*/
+.qa-list dl {
+  position: relative;
+  margin: 30px 0 0;
+  cursor: pointer;
+  border: 1px solid #DDD;
+}
+
+.qa-list dl:first-child {
+ margin-top: 0;
+}
+
+/*右の下矢印*/
+.qa-list dt::after {
+  position: absolute;
+  top: 27px;
+  right: 26px;
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin: auto;
+  content: '';
+  transform: rotate(135deg);
+  border-top: 2px solid #9d9087;
+  border-right: 2px solid #9d9087;
+}
+
+/*開いた時の下矢印*/
+.qa-list .open::after {
+  transform: rotate(-45deg);
+}
+
+/*dtクエスチョンの方*/
+.qa-list dl dt {
+  position: relative;
+  margin: 0;
+  padding: 20px 20px 20px 60px;
+  font-weight: bold;
+  background: #ded5d0;
+  letter-spacing: .2vw;
+}
+
+/*Qの文字*/
+.qa-list dl dt::before {
+  font-size: 22px;
+  line-height: 1;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: block;
+  content: 'Q.';
+  color: #9d9087;
+}
+
+/*Aの文字*/
+.qa-list dl dd::before {
+  font-size: 22px;
+  line-height: 1;
+  position: absolute;
+  left: 20px;
+  display: block;
+  content: 'A.';
+  font-weight: bold;
+  color: #9d9087;
+}
+
+/*ddアンサーの方*/
+.qa-list dl dd{
+  position: relative;
+  margin: 0;
+  padding: 20px 20px 20px 60px;
+  letter-spacing: .2vw;
+  display: none;
+}
+
+/*アンサーのテキスト*/
+.qa-list dl dd p {
+  margin: 30px 0 0;
+}
+
+.qa-list dl dd p:first-child{
+  margin-top: 0;
+}
+
+/*お電話でのお問い合わせ*/
+.tell-number{
+  margin: 5vh auto 4vh;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+}
+
+.tell-number a{
+  color: #b3aca7;
+}
+
+/*phoneのアイコン*/
+.fa-phone{
+  margin-right: 1vw;
+}
+
+/*電話番号にhover 下線*/
+.tell-number a:hover{
+  color: #bbb5af;
+  opacity: 0.8;
+  position: relative;
+  transition-property:all;     
+  transition-duration:1s; 
+}
+
+.tell-number a::after {
+  position: absolute;
+  bottom: -.5vh;/*テキストからの距離*/
+  left: 1.6vw;
+  content: '';
+  width: 95%;
+  height: 2px;/*下線の高さ*/
+  background: #bbb5af;/*下線の色*/
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform .8s;/*アニメーション速度*/
+}
+
+.tell-number a:hover::after {
+  transform: scale(1, 1);
+}
+
+
+/*電話番号下の説明*/
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1em;
+  margin-top: 1.5vh;
+}
+
+.flex p{
+  width: 15%;
+  text-align: center;
+}
+
+.time span{
+  background-color: #d5aaaa;
+  color: whitesmoke;
+  padding: 1vh 1vw;
+}
+
+.date span{
+  background-color: #d5aaaa;
+  color: whitesmoke;
+  padding: 1vh 1.6vw;
+}
+
+.time2 span{
+  padding: 1vh 1vw;
+  color: #9e9790;
+}
+
+
+@media screen and (max-width:1024px){
+
+  /*メイン*/
+  main{
+    max-width: 98%;
+    height: auto;
+  }
+
+  .qa-list{
+    width: 80%;
+    margin: 10vh auto;
+  }
+
+  /*dlリスト全体*/
+  .qa-list dl {
+    margin: 40px 0 0;
+  }
+
+  /*右の下矢印*/
+  .qa-list dt::after {
+    right: 20px;
+  }
+
+  /*dtクエスチョンの方*/
+  .qa-list dl dt {
+    font-size: .9em;
+  }
+
+  /*Qの文字*/
+  .qa-list dl dt::before {
+    font-size: 1.1rem;
+  }
+
+  /*Aの文字*/
+  .qa-list dl dd::before {
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+
+  /*ddアンサーの方*/
+  .qa-list dl dd{
+    font-size: .9em;
+  }
+
+  /*お電話でのお問い合わせ*/
+  .tell-number{
+    margin: 10vh auto 4vh;
+    font-size: 1.7em;
+  }
+
+  /*phoneのアイコン*/
+  .fa-phone{
+    margin-right: 1.5vw;
+  }
+
+  /*電話番号下の説明*/
+  .flex{
+    font-size: .9em;
+    margin-top: 1.5vh;
+  }
+
+  .flex p{
+    width: 22%;
+  }
+
+}

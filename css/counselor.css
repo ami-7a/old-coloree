@@ -1,0 +1,196 @@
+
+/*メイン*/
+main{
+  max-width: 85%;
+  margin: 0 auto;
+  height: 280vh;/*メインの量に合わせて変える*/
+  padding-top: 20vh;
+  /*background-color: antiquewhite;*/ /*mainの高さ検証の為*/
+}
+
+/*フレックス化*/
+.flex{
+  display: flex;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+/*ママちゃんの写真*/
+.flex .mini-img{
+  width: 30%;
+  margin-left: 5vw;
+  margin-top: 1vh;
+}
+
+
+.flex .mom-img img{
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  opacity: 0.9;
+  border-radius: 50%;
+}
+
+.ivy-img{
+  padding-left: 12vw;
+  margin-top: -14vh;
+}
+
+.ivy-img img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  transform: rotate(35deg);
+}
+
+.flex-txt{
+  width: 70%;
+  margin: 4vh 0vw;
+  padding-left: 3vw;
+}
+
+/*美香：Mika*/
+.mini-img h3{
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: .2vw;
+  margin-bottom: .2vh;
+  margin-top: 5vh;
+}
+
+.mini-img .jp-title{
+  font-size: 0.9rem;
+}
+
+
+/*各タイトル*/
+.title{
+  height: 13vh;
+  margin-top: 8vh; 
+}
+
+.title-txt{
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #726767;
+  position: relative;
+}
+
+/*タイトル下線*/
+.title-txt::after{
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: dotted .7px #000;
+  bottom: 50px;
+  width: 26%;
+}
+
+/*タイトル右のイメージ*/
+.title-txt img{
+  width: 100px;
+  height: 140px;
+  padding-bottom: 2vh;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-left: -10px;
+}
+
+
+/*コンテンツ内のそれぞれテキスト*/
+.flex-txt .long-txt{
+  margin-top: 1vh;
+  letter-spacing: .02vw;
+  line-height: 6vh;
+}
+
+h4{
+  margin: 2vh auto;
+}
+
+@media screen and (max-width:1024px) {
+
+    /*メイン*/
+  main{
+    max-width: 98%;
+    height: auto;
+  }
+
+  /*フレックス化*/
+  .flex{
+    flex-direction: column;
+    /*margin-top: 10vh;*/
+    text-align: center;
+  }
+
+  /*ママちゃんの写真*/
+  .flex .mini-img{
+    width: 100%;
+    margin-left: 0vw;
+    margin-top: 0vh;
+  }
+
+
+  .flex .mom-img img{
+    width: 190px;
+    height: 190px;
+  }
+
+  .ivy-img{
+    padding-left: 30vw;
+    margin-top: -10vh;
+  }
+
+  .ivy-img img{
+    height: 110px;
+    width: 110px;
+    opacity: 0.6;
+  }
+
+  .flex-txt{
+    width: 88%;
+    margin: 4vh auto;
+    padding-left: 0vw;
+  }
+
+  /*美香：Mika*/
+  .mini-img h3{
+    font-size: 1.2rem;
+  }
+
+  .mini-img .jp-title{
+    font-size: 0.75rem;
+  }
+
+
+  /*各タイトル*/
+  .title{
+    height: auto;
+    margin-top: 10vh; 
+  }
+
+  .title-txt{
+    font-size: .95rem;
+  }
+
+  /*タイトル下線*/
+  .title-txt::after{
+    bottom: 50px;
+    left: 24%;
+    width: 30%;
+  }
+
+  /*タイトル右のイメージ*/
+  .title-txt img{
+    width: 90px;
+    height: 130px;
+    padding-bottom: 1.8vh;
+  }
+
+
+  /*コンテンツ内のそれぞれテキスト*/
+  .flex-txt .long-txt{
+    font-size: .9em;
+  }
+
+}
