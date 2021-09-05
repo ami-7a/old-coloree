@@ -5,7 +5,6 @@ main{
   margin: 0 auto;
   height: 350vh;
   padding-top: 20vh;
-  /*background-color: antiquewhite;*/ /*mainの高さ検証の為*/
 }
 
 .flex{

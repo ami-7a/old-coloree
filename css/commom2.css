@@ -316,31 +316,31 @@ header{
 
 /*共通ヘッダーここまで*/
 
-/*トップページ以外 sectiontitle h1共通*/
-.sectiontitle h1{ 
+/*トップページ以外 top-title h1共通*/
+.top-title h1{ 
   letter-spacing: .2vw;
   font-size: 3rem;
   font-weight: normal;
 }
 
-/*トップページ以外 sectiontitle p共通*/
-.sectiontitle p{
+/*トップページ以外 top-title p共通*/
+.top-title p{
   font-size: 1rem;
   letter-spacing: .2vw;
   margin-left: .3vw;
   margin-bottom: 3vh;
 }
 
-/*トップページ以外 mainimg共通*/
-.mainimg img{
+/*トップページ以外 main-img共通*/
+.main-img img{
   width: 100%;
   height: 60vh;
   object-fit: cover;
   margin-bottom: 10vh;
 }
 
-/*トップページ以外 h2共通*/
-h2{
+/*トップページ以外 h2 class="pink-txt"共通*/
+h2 class="pink-txt"{
   width: 60%;
   margin: 0 auto;
   text-align: center;
@@ -455,17 +455,17 @@ h2{
 
 @media screen and (max-width: 1024px) {
 
-  .sectiontitle h1{
+  .top-title h1{
     font-size: 2.1em;
     margin: auto 2vw;
   }
 
-  .sectiontitle p{
+  .top-title p{
     margin: auto 2vw;
   }
 
-  /*トップページ以外 mainimg共通*/
-  .mainimg img{
+  /*トップページ以外 main-img共通*/
+  .main-img img{
     width: 100%;
     height: 35vh;
     margin: 1vh auto;
@@ -473,8 +473,8 @@ h2{
     margin-bottom: 7vh;
   }
 
-  /*トップページ以外 h2共通*/
-  h2{
+  /*トップページ以外 h2 class="pink-txt"共通*/
+  h2 class="pink-txt"{
     width: 90%;
     font-size: .9rem;
   }

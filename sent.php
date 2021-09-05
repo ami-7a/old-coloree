@@ -124,18 +124,18 @@
   <main class="main">
 
     <!--CSS共通セクションタイトル-->
-    <section class="sectiontitle">
+    <section class="top-title">
       <h1>Contact Us</h1>
       <p>-お問い合わせ-</p>
     </section>
 
     <!--CSS共通メインイメージ-->
-    <section class="mainimg">
+    <section class="main-img">
       <img src="contact.img/mail-flower.png" alt="">
     </section>
 
-    <!--共通 h2-->
-    <h2>無料相談フォーム<i class="far fa-envelope"></i></h2>
+    <!--共通 h2 class="pink-txt"-->
+    <h2 class="pink-txt">無料相談フォーム<i class="far fa-envelope"></i></h2 class="pink-txt">
     
 
     <!--ここから編集-->
@@ -155,7 +155,7 @@
 
     </div>
 
-     <h2>お電話でのお問い合わせはこちら</h2>
+     <h2 class="pink-txt">お電話でのお問い合わせはこちら</h2 class="pink-txt">
 
      <div class="tell-number">
        <a href="tel:092-753-6668"><i class="fas fa-phone"></i><span>092-753-6668</span></a>
